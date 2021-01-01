@@ -4,7 +4,7 @@ module.exports = {
   url: '',
   pathPrefix: '/',
   title: 'BassantGz30',
-  subtitle: 'Software Engineer. Enthusiast about Data Science. I Write about Machine Learning and some other topics',,
+  subtitle: 'Software Engineer. Enthusiast about Data Science. I Write about Machine Learning and some other topics',
   copyright: '© All rights reserved 2021',
   disqusShortname: '',
   postsPerPage: 4,
