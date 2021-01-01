@@ -3,12 +3,12 @@
 module.exports = {
   url: 'https://lumen.netlify.com',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
+  title: 'BassantGz30',
+  subtitle: 'Software Engineer. Enthusiast about Data Science. I Write about Machine Learning and some other topics',,
+  copyright: '© All rights reserved 2021',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: '',
   useKatex: false,
   menu: [
     {
@@ -20,23 +20,23 @@ module.exports = {
       path: '/pages/about'
     },
     {
-      label: 'Contact me',
-      path: '/pages/contacts'
+      label: 'Tags',
+      path: '/pages/tags'
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Bassant Gamal',
+    photo: '/meBlog.png',
+    bio: 'Software Engineer. Enthusiast about Data Science. I Write about Machine Learning and some other topics',
     contacts: {
       email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      facebook: '',
+      telegram: '',
+      twitter: '',
+      github: 'bgz30',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
+      linkedin: 'assant-gamal-8bb42a107',
       instagram: '#',
       line: '',
       gitlab: '',
@@ -44,7 +44,7 @@ module.exports = {
       codepen: '',
       youtube: '',
       soundcloud: '',
-      medium: '',
+      medium: '@bassantgz30',
     }
   }
 };
