@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: '',
+  url: 'bassantgz30.com',
   pathPrefix: '/',
   title: 'BassantGz30',
   subtitle: 'Software Engineer. Enthusiast about Data Science. I Write about Machine Learning and some other topics',
