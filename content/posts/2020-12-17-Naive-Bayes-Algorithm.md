@@ -10,7 +10,7 @@ tags:
   - "Probability"
   - "Classification"
 description: "Exploring Naive Bayes: Mathematics, How it works, Pros & Cons, and Applications"
-socialImage: "/media/naive/Imgs/img1.jpg"
+socialImage: "/media/naive/Imgs/img1.png"
 ---
 
 ### Exploring Naive Bayes: Mathematics, How it works, Pros & Cons, and Applications

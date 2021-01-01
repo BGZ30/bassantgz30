@@ -9,7 +9,7 @@ tags:
   - "Likelihhod"
   - "Probability"
 description: "Clear explanation for the difference between Probability and Likelihood with a practical example"
-socialImage: "/media/probLikli/Imgs/cover.jpg"
+socialImage: "/media/probLikli/Imgs/cover.png"
 ---
 
 ### Clear explanation for the difference between Probability and Likelihood with a practical example
