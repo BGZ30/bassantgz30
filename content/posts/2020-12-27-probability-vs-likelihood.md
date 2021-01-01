@@ -9,12 +9,12 @@ tags:
   - "Likelihhod"
   - "Probability"
 description: "Clear explanation for the difference between Probability and Likelihood with a practical example"
-socialImage: "/media/Imgs/cover.jpg"
+socialImage: "/media/probLikli/Imgs/cover.jpg"
 ---
 
 ### Clear explanation for the difference between Probability and Likelihood with a practical example
 <p align="center">
-          <img src="/media/Imgs/cover.png">
+          <img src="/media/probLikli/Imgs/cover.png">
 </p>
 
 </br>
@@ -57,7 +57,7 @@ Here, the hypothesis is (p=0.5) and the evidence is ‘HTH’.
 Now let’s see a practical example to make things more clear.
 </br></br>
 
-<img align="right" src="/media/Imgs/probability.png"> </br>
+<img align="right" src="/media/probLikli/Imgs/probability.png"> </br>
 Assume you have a box that contains seven balls, four of them are red, and the other three are green. You picked three balls at random without replacement. **"Without replacemen"** means that once you picked a ball, you do not put it back in the box before selecting a new ball. Picking without replacement makes the draws dependent, since the color of each picked ball does affect the following draws.
 </br></br>
 
@@ -83,7 +83,7 @@ Which means that there is a probability of __17%__ that you get the right sequen
 </br></br>
 In the above example we know the conditions/model’s parameters which are the numbers of balls, and we calculated the probability of an outcome.
 </br></br></br>
-<img align="right" src="/media/Imgs/liklihood.png">
+<img align="right" src="/media/probLikli/Imgs/liklihood.png">
 Now assume again that we have a box with ten balls. The balls are red, green and blue, but we don’t know how many red, green or blue are there. We picked three balls at random without replacement, the first was green, the second was red, and the third was green.
 </br></br>
 Now we would like to know how many red, green and blue balls are there. Of course we can’t make a guess with 100% confidence, we can just make “likelihoods” about the model(box).
@@ -100,27 +100,27 @@ Now we would like to know how many red, green and blue balls are there. Of cours
 
 To make calculations simple and clear, I am going to use a simple python code to help me calculate those likelihoods.
 </br>
-<img src="/media/Imgs/code_1_balls.png"> </br></br>
+<img src="/media/probLikli/Imgs/code_1_balls.png"> </br></br>
 
 *‘balls’* contains all the combinations of the numbers in sets of three which are 1331 different combinations (11\*11\*11), it looks like this: </br>
-<img src="/media/Imgs/all_combinations.png"> </br></br>
+<img src="/media/probLikli/Imgs/all_combinations.png"> </br></br>
 
 Now we should filter those combinations as they are not all valid. As you can see, there are some case in which the sum of the balls is not ten. </br>
-<img src="/media/Imgs/code_2_ten_only.png">  </br></br>
+<img src="/media/probLikli/Imgs/code_2_ten_only.png">  </br></br>
 
 Now we got the following list:  </br>
-<img src="/media/Imgs/sum_to_10.png">   </br></br>
+<img src="/media/probLikli/Imgs/sum_to_10.png">   </br></br>
 
 Again, not all those are valid, we know that there are at least one red ball and at least two green balls.  </br>
-<img src="/media/Imgs/code_3_valid_all.png">  </br></br>
+<img src="/media/probLikli/Imgs/code_3_valid_all.png">  </br></br>
 
 Now the valid combinations are:  </br>
-<img src="/media/Imgs/valid_all.png">   </br></br>
+<img src="/media/probLikli/Imgs/valid_all.png">   </br></br>
 
 Finally, calculate the probabilities of ‘GRG’ for each combination:  </br>
-<img src="/media/Imgs/code_4_liklihood_all.png">   </br></br>
+<img src="/media/probLikli/Imgs/code_4_liklihood_all.png">   </br></br>
 The likelihoods are:  </br>
-<img src="/media/Imgs/liklihood_without_blue.png">  </br></br>
+<img src="/media/probLikli/Imgs/liklihood_without_blue.png">  </br></br>
 
 Now we have the likelihoods of the model. For example if the box has **2 red balls, 7 green balls and 1 blue ball, then there is a 11.67% probability that we get (GRG) when we pick three random balls.**
 </br></br>
@@ -129,15 +129,15 @@ What we did so far, is we tried to force the model to fit our data. i.e. we forc
 </br></br>
 
 Now if we want to go further and make the best predictions, we will chose the maximum likelihood to represent our model (box). </br>
-<img src="/media/Imgs/max_liklihood_without_blue.png"> </br></br>
+<img src="/media/probLikli/Imgs/max_liklihood_without_blue.png"> </br></br>
 This means that we are 17.5% sure that the box has three red balls, seven green balls, and no blue balls. Note that the maximum likelihood occurred when there are no blue balls in the box. 
 </br>
 
 But if we are sure that there is at least one blue ball in the box, then we should exclude the combinations in which there are no blue balls.
-<img src="/media/Imgs/code_5_with_blue.png"> </br></br>
+<img src="/media/probLikli/Imgs/code_5_with_blue.png"> </br></br>
 
 Now the likelihoods are: </br>
-<img src="/media/Imgs/max_liklihood_with_blue.png"> </br></br>
+<img src="/media/probLikli/Imgs/max_liklihood_with_blue.png"> </br></br>
 
 And the maximum likelihood now is 12.5%.
 </br></br>
